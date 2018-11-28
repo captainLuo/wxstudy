@@ -1,0 +1,11 @@
+<!--pages/movieDetail/movieDetail.wxml-->
+<view class='movie_detail_container'>
+  <image class='movie_detail_poster' src='{{currentDetail.images.large}}'></image>
+  <view class='movie_detail_content'>
+    <text class='movie_detail_name'>片名：{{currentDetail.original_title}}</text>
+      <text class='movie_detail_actor'>演员：{{currentDetail.casts[0].name}}、{{currentDetail.casts[1].name}}、{{currentDetail.casts[2].name}}</text>
+      <text class='movie_detail_director'>导演：{{currentDetail.directors[0].name}}</text>
+  </view>
+    
+  <button class='movie_detail_watch'>观看影片</button>
+</view>

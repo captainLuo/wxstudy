@@ -1,0 +1,26 @@
+<!--pages/list/list.wxml-->
+<import src="/pages/template/list_template.wxml" />
+<view>
+  <swiper catchtap='carouselDetail' class='swiper' indicator-dots indicator-color="white">
+    <swiper-item>
+      <image src='/images/1.jpg' data-index="0"></image>
+    </swiper-item>
+     <swiper-item>
+      <image src='/images/2.jpg' data-index="1"></image>
+    </swiper-item>
+     <swiper-item>
+      <image src='/images/3.jpg' data-index="2"></image>
+    </swiper-item>
+     <swiper-item>
+      <image src='/images/4.jpg' data-index="3"></image>
+    </swiper-item>
+     <swiper-item>
+      <image src='/images/5.jpg' data-index="4"></image>
+    </swiper-item>
+  </swiper>
+  <view wx:for="{{listArr}}" wx:key="{{index}}">
+    <view catchtap='toDetail' data-index="{{index}}">
+      <template data="{{...item}}" is="listTmp"/>
+    </view>
+  </view>
+</view>

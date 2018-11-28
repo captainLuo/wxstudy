@@ -1,0 +1,8 @@
+<!--pages/index/index.wxml-->
+<view class='indexContainer'>
+  <text class='welcome_text'>hello,{{userInfo.nickName}}</text>
+  <button bindgetuserinfo="handleGetUserInfo" style='display:{{isShow?"block":"none"}}' open-type='getUserInfo'>获取用户信息</button>
+  <view bindtap='handleParent' class='goStudy'>
+    <button class='start_btn' catchtap='handleChildren'>start wxmini</button>
+  </view>
+</view>

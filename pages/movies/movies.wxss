@@ -1,0 +1,86 @@
+/* pages/movies/movies.wxss */
+/*教程样式*/
+/* .movie_container{
+  padding:10rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #eee;
+}
+.movie_poster{
+  width:128rpx;
+  height:128rpx;
+}
+.movie_detail{
+  display: flex;
+  flex-direction: column;
+  width:65%;
+  padding-left: 10rpx;
+}
+.movie_name{
+  font-size: 32rpx;
+  width:70%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+}
+.movie_time{
+  font-size: 24rpx;
+  margin:10rpx 0;
+}
+.director{
+  font-size: 26rpx;
+}
+.movie_rating{
+  font-size: 28rpx;
+  color:red;
+} */
+
+/*流式布局*/
+.flow_box{
+  width:90%;
+  margin:10rpx auto;
+  column-count:3;
+  column-gap:20rpx;
+  list-style:none;
+  column-rule:1px dashed rgba(0,0,0,.5);
+}
+.movie_container{
+  padding:10rpx;
+  border-bottom:1px solid #eee;
+  height:100%;
+  overflow: auto;
+}
+.movie_poster{
+  width:100%;
+  height:128rpx;
+}
+.movie_detail{
+  display: flex;
+  flex-direction: column;
+  width:65%;
+  padding-left: 10rpx;
+}
+.movie_name{
+  font-size:28rpx;
+  width:100%;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+.movie_time{
+  font-size: 24rpx;
+  margin:10rpx 0;
+}
+.director{
+  font-size: 26rpx;
+  width:100%;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+.movie_rating{
+  font-size: 28rpx;
+  color:red;
+  float: right;
+}
+.clear{clear:both;}

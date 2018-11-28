@@ -1,0 +1,15 @@
+<!--pages/movies/movies.wxml-->
+<view class='flow_box'>
+  <view wx:for="{{movieListArr}}" wx:key="{{index}}">
+    <navigator open-type='navigate' url='/pages/movieDetail/movieDetail?index={{index}}' class='movie_container'>
+      <image class='movie_poster' mode="widthFix" src='{{item.images.large}}'></image>
+      <view class='movie_detail'>
+          <text class='movie_name'>{{item.original_title}}</text>
+          <text class='movie_time'>{{item.year}}</text>
+          <text class='director'>导演:{{item.directors[0].name}}</text>
+      </view>
+      <text class='movie_rating'>评分:{{item.rating.average}}</text>
+      <view class='clear'></view>
+    </navigator>
+  </view>
+</view>

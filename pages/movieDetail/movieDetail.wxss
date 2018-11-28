@@ -1,0 +1,26 @@
+/* pages/movieDetail/movieDetail.wxss */
+.movie_detail_container{
+  display: flex;
+  flex-direction: column;
+}
+image.movie_detail_poster{
+  width:70%;
+  height:700rpx;
+  margin: 20rpx auto;
+}
+.movie_detail_content{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 32rpx;
+  margin: 10rpx auto;
+}
+.movie_detail_name{
+  
+}
+.movie_detail_watch{
+  background-color: #01ad23;
+  color: #fff;
+  width:50%;
+}

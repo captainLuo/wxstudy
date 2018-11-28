@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/movies/movies",
+    "pages/list/list",
+    "pages/movieDetail/movieDetail",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "navigationBarTitleText": "demo"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/list/list",
+        "text": "首页",
+        "iconPath": "/images/icon/intro.png",
+        "selectedIconPath": "/images/icon/intro_click.png"
+      },
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "电影",
+        "iconPath": "/images/icon/movie.png",
+        "selectedIconPath": "/images/icon/movie_click.png"
+      }
+    ]
+  }
+}
